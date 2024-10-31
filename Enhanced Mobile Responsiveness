@@ -1,0 +1,51 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Leaderboard Container */
+.leaderboard {
+    width: 90%;
+    margin: auto;
+}
+
+/* Leaderboard Item */
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .leaderboard {
+        font-size: 14px;
+    }
+
+    .leaderboard-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 5px 0;
+    }
+
+    .leaderboard-item > * {
+        margin-bottom: 5px; /* Space between stacked items */
+        width: 100%; /* Full width for better readability */
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px; /* Larger font size for touch readability */
+    }
+}
